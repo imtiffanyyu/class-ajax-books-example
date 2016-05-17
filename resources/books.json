@@ -1,0 +1,14 @@
+[
+	{"title": "Daring Greatly",
+	"author": "Brene Brown",
+	"desc": "Researcher and thought leader Dr. Brene Brown offers a powerful new vision that encourages us to dare greatly, to embrace vulnerability and imperfection, to live wholeheartedly, and to courageously engage in our lives.",
+	"thumb": "daring-greatly-thumb.jpg",
+	"cover": "daring-greatly-large.jpg"
+	},
+	{"title": "Girlboss",
+	"author": "Sophia Amoruso",
+	"desc": "In the New York Times bestseller that the Washington Post called 'Lean In for misfits,' Sophia Amoruso shares how she went from dumpster diving to founding one of the fastest-growing retailers in the world.",
+	"thumb": "girlboss-thumb.jpg",
+	"cover": "girlboss-large.jpg"
+	}
+]
