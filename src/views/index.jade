@@ -2,5 +2,13 @@ doctype html
 html
 	head
 		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+		script(src="js/custom.js")
 	body
-		h1 Welcome to our bookstore
+		h1 Currently Reading
+		each book in books
+			img.thumb(src='/images/' + book.thumb, style='height: 200px; float: left; padding: 10px', title=book.title)
+		div#display(style='width: 50%; float: left; padding: 0 20%;')
+			img#cover(style='height:500px;')
+			h2#title
+			p#author
+			p#description

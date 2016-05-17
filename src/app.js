@@ -23,6 +23,26 @@ app.get ( '/', ( req, res) => {
 	
 } )
 
+app.get ('/api', (req, res) => {
+	var booktitle = req.query.title
+	var bookmatch = {}
+	fs.readFile('./resources/books.json', function (error,data) {
+		if(error) {
+			res.send("book not found.");
+		}
+		else {
+			var parsedBooks = JSON.parse (data)
+			console.log (parsedBooks)
+			for ( var i = 0; i < parsedBooks.length; i++ ) {
+				if ( parsedBooks[i].title == booktitle ) {
+					bookmatch = parsedBooks[i]
+				}
+			}
+			res.send ( bookmatch )
+		}
+	})
+})
+
 app.listen ( 3000 )
 
 // BOOK APP PLAN
@@ -33,7 +53,7 @@ app.listen ( 3000 )
 // X Images folder
 // X Get book images
 // X Tell express to use a static folder
-// Show the books on thge page
+// X Show the books on thge page
 // Make script to control DOM and do AJAX
 // DOM (result of rendering the page): listen for clicks
 // AJAX: Get book details
